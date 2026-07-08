@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>会员管理</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<h2>
+
+会员管理
+
+</h2>
+
+<a href="index.html">
+
+返回首页
+
+</a>
+
+</header>
+
+<div class="container">
+
+<input
+id="search"
+placeholder="搜索手机号">
+
+<button id="searchBtn">
+
+搜索
+
+</button>
+
+<hr>
+
+<h3>
+
+新增会员
+
+</h3>
+
+<input
+id="name"
+placeholder="姓名">
+
+<input
+id="phone"
+placeholder="手机号">
+
+<button id="addMember">
+
+保存会员
+
+</button>
+
+<hr>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>姓名</th>
+
+<th>电话</th>
+
+<th>本金</th>
+
+<th>赠送</th>
+
+<th>操作</th>
+
+</tr>
+
+</thead>
+
+<tbody id="memberTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="js/storage.js"></script>
+
+<script src="js/members.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,"Microsoft YaHei",sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+.topbar{
+    background:#111827;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+}
+
+.topbar a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.container{
+    width:95%;
+    max-width:1200px;
+    margin:20px auto;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    text-decoration:none;
+    color:#111;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+input,select{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:#fff;
+}
+
+th{
+    background:#2563eb;
+    color:white;
+    padding:12px;
+}
+
+td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+.login-box{
+    width:95%;
+    max-width:400px;
+    margin:60px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.login-box h1{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+#memberInfo,
+#memberCard,
+#result{
+    background:#fff;
+    border-radius:10px;
+    padding:15px;
+    margin-top:15px;
+    box-shadow:0 3px 8px rgba(0,0,0,.08);
+}
+
+@media(max-width:768px){
+
+.grid{
+grid-template-columns:1fr 1fr;
+}
+
+table{
+font-size:14px;
+}
+
+}
+
+@media(max-width:500px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.topbar{
+flex-direction:column;
+gap:10px;
+}
+
+}

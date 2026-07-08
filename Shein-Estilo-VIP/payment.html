@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>收银</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<h2>会员消费</h2>
+
+<a href="index.html">
+
+返回首页
+
+</a>
+
+</header>
+
+<div class="container">
+
+<input
+id="phone"
+placeholder="手机号">
+
+<button
+id="searchBtn">
+
+查询会员
+
+</button>
+
+<div id="memberCard"></div>
+
+<input
+id="payMoney"
+type="number"
+placeholder="消费金额">
+
+<button
+id="calcBtn">
+
+计算优惠
+
+</button>
+
+<div id="result"></div>
+
+<button
+id="payBtn">
+
+确认消费
+
+</button>
+
+</div>
+
+<script src="js/storage.js"></script>
+
+<script src="js/payment.js"></script>
+
+</body>
+
+</html>
